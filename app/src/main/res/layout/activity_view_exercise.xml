@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F7F3F8"
+    android:padding="30dp"
+    tools:context=".ViewExercise">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dmserif"
+        android:paddingBottom="10dp"
+        android:text="Name of Exercise"
+        android:textColor="#1D2A26"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bow_pose" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="START"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/timer"
+        style="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnStart"
+        android:layout_marginBottom="79dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_horizontal"
+        android:text="20"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp" />
+
+</RelativeLayout>
